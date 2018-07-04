@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset ="UTF-8">
+<link rel="stylesheet" type="text/css" href="css/self.css">
+</head>
+<body>
+
+<nav>
+    	<ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="INTERNSHIP XPERIENCE.html">INTERNSHIP XPERIENCE</a></li>
+        <li><a href="contactUs.html">CONTACT ME</a></li>
+        <li><a href="aboutSelf.html">ABOUT SELF</a></li>
+        </ul>
+</nav>
+<div  id="container">
+    <img class="slider" src="./media/1.jpg"/>
+    <img class="slider" src="./media/03.jpg"/>
+    <img class="slider" src="./media/4.jpg"/>
+    <img class="slider" src="./media/bof.jpg"/>
+    <img class="slider" src="./media/5.jpg"/>
+    <button class="btn" onclick ="plusIndex(-1)"id="btn1">&#10094</button>
+    <button class="btn" onclick ="plusIndex(1)" id="btn2">&#10095</button>
+</div>
+</body>
+<script>
+    var index = 1;
+
+    function plusIndex(n){
+        index = index + n;
+        showImage(index);
+    }
+    showImage(1);
+
+    function showImage(n){
+        var i;
+        var x = document.getElementsByClassName("slider");
+        if (n > x.length){index = 1};
+        if (n < 1) {index = x.length};
+        for (i =0; i<x.length;i++)
+        {
+            x[i].style.display = "none";
+        }
+        x[index-1].style.display = "block";
+    }
+    autoSlide();
+    function autoSlide(){
+        var i;
+        var x = document.getElementsByClassName("slider");
+        for (i =0; i<x.length;i++)
+        {
+            x[i].style.display = "none";
+        }
+        if(index > x.length){index = 1}
+        x[index-1].style.display = "block";
+        index++;
+        setTimeout(autoSlide,2000);
+    }
+</script>
+<!-- about -->
+<section id="about" class="about-us" style="background-image:url(images/background/bg1.png);">
+    <div class="auto-container">
+        
+        <div class="row">
+           
+            <div class="col-md-5 col-sm-12">
+                <figure class="about-image-box">
+                    <img src="./media/DSC_7665 (2).JPG" alt="">
+                </figure>
+            </div>
+
+            <div class="col-md-7 col-sm-12">
+
+                <div class="about-content">
+                    <div class="sec-title">
+                        <h1>About Me</h1>
+                    </div>
+                    <div class="text">Lorem ipsum dolor sit amet, 
+consectetur adipisicing elitsed do eiusmod tempor incididunt ut labore 
+et dolore magna aliqua Ut enim ad minim veniam, quis nostrud 
+exercitation ullamco laboris nisi ut aliquip ex ea commo do consequat. 
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
+dolore eu fugiat nulla paria tur. Excepteur sint occaecat cupidatat non 
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                    
+                    <div class="link-btn">
+                        <a href="https://www.linkedin.com/in/thapelo-khantsi-80a038130/" class="theme-btn btn-style-two">Read More</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</html>

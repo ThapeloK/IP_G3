@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/contact.css">
+   
+</head>
+<body>
+
+<nav>
+    	<ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="INTERNSHIP XPERIENCE.html">INTERNSHIP XPERIENCE</a></li>
+        <li><a href="contactUs.html">CONTACT ME</a></li>
+        <li><a href="aboutSelf.html">ABOUT SELF</a></li>
+        </ul>
+</nav>
+
+<p id="contactTitle"> Enter your name and contact details and we'll get in touch with you as soon as possible.</p>
+
+    <div class="maps">
+    	 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3746.867174350898!2d57.57108701430435!3d-20.097838548739002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x217c5467288abe77%3A0x4b865e0d37c167d!2sBeau+Plan+Business+Park!5e0!3m2!1sen!2smu!4v1520089904565"></iframe>
+    </div>
+
+    <div class="form">               
+        <form id="contactForm" action="processInput.php" method="post">
+
+           <label for="first" class="textLabel"> First name:</label>
+             
+              <input type="text" name="first" id="first" placeholder="Enter your first name.." required/><br>
+
+            <label for="last" class="textLabel">Last name:</label>
+
+                <input type="text" name="last" id="last" placeholder="Enter your last name.." required/><br>              
+
+            <label for="email" class="textLabel">Email address:</label>
+
+                  <input type="text" name="email" id="email" placeholder=" example@gmail.com.." required/><br>
+
+            <label for="message" class="textLabel">Message:</label><br>
+                                             
+                   <textarea id="message" name="message" placeholder="Leave your message" style="height:100px" required></textarea><br>      
+
+                  <input type="submit" name="submit" id="submit" value="Submit" />
+       </form>
+    </div> 
+    
+   
+</body>
+</html>
