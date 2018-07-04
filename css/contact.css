@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 90%;
+    max-width: 1024px;
+    margin: 2em auto;
+    background: white;                          /* try changing the backgroung color */
+    font-family: Verdana, Geneva, sans-serif;   /* try changing the font */
+    font-size: 0.8em;
+    
+}
+
+/* contact us page*/
+
+input[type=text], textarea {
+
+    width: 100px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    height: 200px;
+
+}
+
+
+input[type=submit] {
+
+    background-color: #6ab04c;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 150px;
+    width: 150px;
+    margin-bottom: 4px;
+
+     }
+
+ .textLabel{
+
+ 	margin-top: 10px;
+ 	margin-bottom: 10px;
+    margin-left: 20px;
+
+}
+  #contactTitle{
+  	font-weight: lighter;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.form {
+    background-image: linear-gradient(rgba(0,0,0, 0.0), rgba(0,0,0, 0.0)), url(http://img.techwallacdn.com/640/ppds/cc17e3d4-928f-44e4-89e4-7181d74f7629.jpg);
+   height: 430px;
+   width: 450px;
+   border: 1px solid #6ab04c;
+   margin: 10px;
+   margin-bottom: 20px;
+   margin-top: 20px;
+}
+
+iframe  {
+    margin-top:15px;
+    width:50%; 
+    height:430px;
+    float: right; 
+}
+
+#first {
+    width: 300px;
+    height: 10px;
+}
+
+#last {
+    width: 300px;
+    height: 10px
+}
+
+#email {
+    width: 300px;
+    height: 10px;
+}
+
+#message {
+    width: 300px;
+    
+}
+
+#contactForm {
+    width: 200px;
+    
+}
