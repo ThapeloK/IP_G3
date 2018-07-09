@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +10,41 @@ body {
     font-family: Verdana, Geneva, sans-serif;   /* try changing the font */
     font-size: 0.8em;
     
+}* {
+	margin: 0;
+	padding: 0;
 }
+
+	
+ul {
+    list-style-type: none;
+    padding-top: 25px;
+	padding-bottom: 25px;
+    overflow-x: hidden;
+	background: #00000078;
+	font-family: 'PT Sans', sans-serif;
+	font-size: 18px;
+	position: fixed;
+	top: 0;
+	padding-left: 580px;
+	width: 100%;
+	}
+	
+li {
+   float: left; 
+   padding-left: 10px;
+   padding-right: 20px;
+}
+
+li a {
+    display: block;
+    color: #e8ded9ff;
+    text-align: center;
+    padding: 6px 14px;
+    text-decoration: none;
+	border: 2px solid #00000000;
+}
+
 
 /* contact us page*/
 
@@ -57,7 +90,7 @@ input[type=submit] {
 }
 
 .form {
-    background-image: linear-gradient(rgba(0,0,0, 0.0), rgba(0,0,0, 0.0)), url(http://img.techwallacdn.com/640/ppds/cc17e3d4-928f-44e4-89e4-7181d74f7629.jpg);
+    background-image: linear-gradient(rgba(0,0,0, 0.4), rgba(0,0,0, 0.4)), url(https://images.unsplash.com/photo-1460602594182-8568137446ce?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c6a89cf0d31c8ed23b35aaf9a119a9f5&w=1000&q=80);
    height: 430px;
    width: 450px;
    border: 1px solid #6ab04c;
@@ -96,103 +129,4 @@ iframe  {
 #contactForm {
     width: 200px;
     
-=======
-* {
-    margin: 0;
-    padding: 0;
-}
-body {
-    width: 90%;
-    max-width: 1024px;
-    margin: 2em auto;
-    background: white;                          /* try changing the backgroung color */
-    font-family: Verdana, Geneva, sans-serif;   /* try changing the font */
-    font-size: 0.8em;
-    
-}
-
-/* contact us page*/
-
-input[type=text], textarea {
-
-    width: 100px;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    resize: vertical;
-    margin-bottom: 5px;
-    margin-left: 20px;
-    height: 200px;
-
-}
-
-
-input[type=submit] {
-
-    background-color: #6ab04c;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-left: 150px;
-    width: 150px;
-    margin-bottom: 4px;
-
-     }
-
- .textLabel{
-
- 	margin-top: 10px;
- 	margin-bottom: 10px;
-    margin-left: 20px;
-
-}
-  #contactTitle{
-  	font-weight: lighter;
-    margin-bottom: 5px;
-    margin-top: 10px;
-}
-
-.form {
-    background-image: linear-gradient(rgba(0,0,0, 0.0), rgba(0,0,0, 0.0)), url(http://img.techwallacdn.com/640/ppds/cc17e3d4-928f-44e4-89e4-7181d74f7629.jpg);
-   height: 430px;
-   width: 450px;
-   border: 1px solid #6ab04c;
-   margin: 10px;
-   margin-bottom: 20px;
-   margin-top: 20px;
-}
-
-iframe  {
-    margin-top:15px;
-    width:50%; 
-    height:430px;
-    float: right; 
-}
-
-#first {
-    width: 300px;
-    height: 10px;
-}
-
-#last {
-    width: 300px;
-    height: 10px
-}
-
-#email {
-    width: 300px;
-    height: 10px;
-}
-
-#message {
-    width: 300px;
-    
-}
-
-#contactForm {
-    width: 200px;
-    
->>>>>>> 0aea7a81abf395ff532fb57104991accc855d0f4
 }
