@@ -1,0 +1,58 @@
+#aboutmeParentText {
+  position: relative;
+}
+
+#aboutmeChildText
+{
+  position: absolute;
+  top: 20%;
+  transform: translateY();
+}
+
+#contactMeContent {
+  margin: auto;
+}
+
+.paragraph1 {
+  margin: auto;
+}
+
+.skillsDiv {
+  margin: auto;
+}
+
+.skillsDiv:hover {
+  box-shadow: 0px 0px 2px 2px #428bca;
+}
+
+
+/* ABOUTME1 CSS */
+	
+ul {
+  list-style-type: none;
+  padding-top: 25px;
+padding-bottom: 25px;
+  overflow-x: hidden;
+background: #00000078;
+font-family: 'PT Sans', sans-serif;
+font-size: 18px;
+position: fixed;
+top: 0;
+padding-left: 580px;
+width: 100%;
+}
+
+li {
+ float: left; 
+ padding-left: 10px;
+ padding-right: 20px;
+}
+
+li a {
+  display: block;
+  color: #e8ded9ff;
+  text-align: center;
+  padding: 6px 14px;
+  text-decoration: none;
+border: 2px solid #00000000;
+}
