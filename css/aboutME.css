@@ -1,3 +1,7 @@
+nav > ul {
+  text-decoration: none;
+}
+
 #aboutmeParentText {
   position: relative;
 }
@@ -19,6 +23,7 @@
 
 .skillsDiv {
   margin: auto;
+  border-radius: 5px;
 }
 
 .skillsDiv:hover {
@@ -27,8 +32,8 @@
 
 
 /* ABOUTME1 CSS */
-	
-ul {
+
+/* ul {
   list-style-type: none;
   padding-top: 25px;
 padding-bottom: 25px;
@@ -43,7 +48,7 @@ width: 100%;
 }
 
 li {
- float: left; 
+ float: left;
  padding-left: 10px;
  padding-right: 20px;
 }
@@ -55,4 +60,4 @@ li a {
   padding: 6px 14px;
   text-decoration: none;
 border: 2px solid #00000000;
-}
+} */

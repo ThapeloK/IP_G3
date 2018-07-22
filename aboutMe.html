@@ -9,47 +9,44 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-default">
-      <div class="container-fluid">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+      <!-- We need to add an image logo here -->
+      <a class="navbar-brand" href="#">LOGO</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <!-- Collapsed version that will appear on small screens like phones -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigationList">
-            <!-- Toggle icon that will collapse and view navList vertically on screen -->
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a href="#" class="navbar-brand"> Mahlelebe </a>
-        </div>
-        <!-- navigationList content under the collapse toggle -->
-        <div class="collapse navbar-collapse" id="navigationList">
-          <ul class="nav navbar-nav">
-            <li>Home</li>
-            <li>About Me</li>
-            <li>Internships</li>
-            <li>Contacts</li>
-          </ul>
-        </div>
-
-        <div class="nav navbar-default">
-          <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="INTERNSHIP XPERIENCE.html">INTERNSHIP XPERIENCE</a></li>
-            <li><a href="contactUs.html">CONTACT ME</a></li>
-            <li><a href="aboutMe.html">ABOUT ME</a></li>>
-          </ul>
-        </div>
+      <div class="collapse navbar-collapse" id="navbarColor02">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#aboutMe">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#p3">Internships</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contactMe">Contacts</a>
+          </li>
+        </ul>
       </div>
     </nav>
 
     <div class="container">
 
-      <div class="row aboutMe">
+      <!-- Thapelo will add home content inside this div -->
+      <div id="home">
+        <br><br><br><br><br><br><br><br>
+      </div>
+      <div class="row" id="aboutMe">
+        <br><br><br><br><br><br>
         <div class="col-sm-5">
-          <img src="media/bof.jpg"
-               class="rounded-circle img-responsive"
+          <img src="media/bof.jpg" class="rounded-circle img-responsive"
                style="height: 400px; width: 400px;">
         </div>
 
@@ -62,32 +59,74 @@
             </p>
 
             <div class="link-btn">
-                <a href="https://www.linkedin.com/in/thapelo-khantsi-80a038130/" class="theme-btn btn-style-two">Learn More</a>
+                <a href="https://www.linkedin.com/in/thapelo-khantsi-80a038130/" class="theme-btn btn-style-two"> Learn More </a>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Contact me section -->
-      <h3> Let's keep in touch </h3><br>
-      <div class="contactMe">
+      <div id="skills">
+        <br><br><br><br><br><br>
+        <h3>Core competencies</h3>
+        <br><br>
 
-        <div class="row contactMeContent">
-          <div class="col-md-4">
-            <address>
-             <strong> African Leadership University </strong><br>
-             XXXX street<br>
-             Pamplemousses, Beau Plan Business Park <br>
-             <abbr title="Phone">Phone:</abbr> (+230) XXXX XXXX
-            </address>
-            <address>
-             <strong> Kevin Marumo </strong><br>
-             <a href="mailto:#">mailto@alustudent.com</a>
-            </address>
+        <div class="row">
+          <div class="skillsDiv border border-secondary  col-md-2">
+            <p class="text-center">
+              <strong>Software Engineering</strong><br>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </p>
           </div>
+          <div class="skillsDiv border border-secondary col-md-2">
+            <p class="text-center">
+              <strong>Mathematics</strong><br>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </p>
+          </div>
+          <div class="skillsDiv border border-secondary col-md-2">
+            <p class="text-center">
+              <strong>Statistical Modelling</strong><br>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </p>
+          </div>
+          <div class="skillsDiv border border-secondary col-md-2">
+            <p class="text-center">
+              <strong>Product Design</strong><br>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </p>
+          </div>
+        </div>
+      </div>
 
-          <div class="col-md-4">
-            <form class="form-horizontal" role="form">
+      <!-- Kevin and Ghislain will implement their design inside this div -->
+      <div id="internships">
+        <br><br><br><br><br><br>
+        <h3>Current Internship</h3>
+        <div class="col-md-10 paragraph1">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+        <br><br><br><br>
+      </div>
+
+      <!-- Contact me section -->
+      <div id="contactMe">
+        <h3> Let's connect </h3><br>
+          <div class="row" id="contactMeContent">
+            <div class="col-md-1"></div>
+            <div class="col-md-3">
+              <address>
+               <strong> African Leadership University </strong><br>
+               XXXX street<br>
+               Pamplemousses, Beau Plan Business Park <br>
+               <abbr title="Phone">Phone:</abbr> (+230) XXXX XXXX
+              </address>
+              <address>
+               <strong> Kevin Marumo </strong><br>
+               <a href="mailto:#">mailto@alustudent.com</a>
+              </address>
+            </div>
+
+            <form class="form-horizontal col-md-6" role="form">
              <div class="form-group userNames">
                <label for="nameLabel" class="control-label">Full Name</label>
                <div>
@@ -95,13 +134,10 @@
                  placeholder="Enter Full Name">
                </div>
               </div>
-             <div class="form-group userMessage">
-               <label for="messageLabel" class="control-label"> Your Message </label>
-               <div>
-                 <input type="text" class="form-control" id="message"
-                 placeholder="Enter Your Message">
-                </div>
-               </div>
+              <div class="form-group">
+                <label for="messageArea">Message</label>
+                <textarea class="form-control" id="messageArea" rows="3"></textarea>
+              </div>
                <div class="form-group sendMessage">
                  <div>
                    <button type="submit" class="btn btn-success">Send</button>
@@ -109,8 +145,7 @@
                 </div>
               </form>
             </div>
-
-          </div>
+            <br><br><br><br>
       </div>
     </div>
 
