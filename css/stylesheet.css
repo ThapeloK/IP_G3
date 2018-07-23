@@ -19,22 +19,23 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color:white;
-    font-size:30px;
+    font-size:18px;
         
 }
 	
 ul {
     list-style-type: none;
     padding-top: 25px;
-	padding-bottom: 25px;
+	  padding-bottom: 25px;
     overflow-x: hidden;
-	background: #00000078;
-	font-family: 'PT Sans', sans-serif;
-	font-size: 18px;
-	position: fixed;
-	top: 0;
-	padding-left: 580px;
-	width: 100%;
+	  background: #00000078;
+	  font-family: 'PT Sans', sans-serif;
+	  font-size: 18px;
+    font-weight: bold;
+	  position: fixed;
+	  top: 0;
+	  padding-left: 580px;
+	  width: 100%;
 	}
 	
 li {
@@ -49,7 +50,10 @@ li a {
     text-align: center;
     padding: 6px 14px;
     text-decoration: none;
-	border: 2px solid #00000000;
+	  border: 2px solid #00000000;
+}
+nav ul li a:hover {
+    background-color:#bdc3c7;
 }
 
 #internshipXperience {
