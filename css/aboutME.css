@@ -30,34 +30,108 @@ nav > ul {
   box-shadow: 0px 0px 2px 2px #428bca;
 }
 
+/*** 
 
-/* ABOUTME1 CSS */
+====================================================================
+	Skills Section
+====================================================================
 
-/* ul {
-  list-style-type: none;
-  padding-top: 25px;
-padding-bottom: 25px;
-  overflow-x: hidden;
-background: #00000078;
-font-family: 'PT Sans', sans-serif;
-font-size: 18px;
-position: fixed;
-top: 0;
-padding-left: 580px;
-width: 100%;
-}
+***/
 
-li {
- float: left;
- padding-left: 10px;
- padding-right: 20px;
-}
-
-li a {
-  display: block;
-  color: #e8ded9ff;
-  text-align: center;
-  padding: 6px 14px;
+a {
   text-decoration: none;
-border: 2px solid #00000000;
-} */
+}
+
+@media all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
+  .textOverImage {
+      background-size: cover !important;
+  }
+}
+
+.textOverImage {
+  display: inline-block;
+  position: relative;
+  min-width: 550px;
+  height: 315px;
+  margin: 4px;
+  background-size: 100%;
+  background-position: center;
+  transition: 0.5s;
+  overflow: hidden;
+  border-radius: 4px;
+  box-shadow: 0 0 4px #000;
+  text-align: center;
+}
+
+
+
+.one {
+  background-image: url("../media/03.jpg");
+  background-size: cover;
+}
+
+.two {
+  background-image: url("../media/desk.JPG");
+  background-size: cover;
+}
+
+.three {
+  background-image: url("../media/download.jpeg");
+  background-size: cover;
+}
+.four {
+  background-image: url("../media/IMG_3418.JPG");
+  background-size: cover;
+}
+.textOverImage:hover {
+  background-size: cover;
+}
+
+.textOverImage:before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(90%);
+  /*use transform:translateY(100%); to remove footer*/
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  padding: 0 8px;
+  content: attr(data-title);
+  transition: 0.5s 0.1s;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.textOverImage:after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: #fff;
+  padding: 8px;
+  content: attr(data-text);
+  transition: 0.5s;
+  padding-top: 2em;
+  margin-top: 8px;
+  transform: translateY(100%);
+  opacity: 0;
+}
+
+.textOverImage:hover:after {
+  transform: translateY(0);
+  transition: 0.5s 0.1s;
+  opacity: 1;
+}
+
+.textOverImage:hover:before {
+  transform: translateY(0);
+  padding: 8px;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: 0.5s;
+}
+
