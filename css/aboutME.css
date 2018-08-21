@@ -1,3 +1,42 @@
+/* color codes for background */
+/* #080808 */
+/* #000 */
+/* #777777 */
+
+/*** 
+
+====================================================================
+	Home Page Section
+====================================================================
+
+***/
+
+#background {
+	clear:both;
+	position: static;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+	filter: blur(5px);
+  }
+  .centered {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:white;
+    font-size:40px;
+  }
+
+  /*** 
+
+====================================================================
+	About Page Section
+====================================================================
+
+***/
+
 nav > ul {
   text-decoration: none;
 }
@@ -21,14 +60,15 @@ nav > ul {
   margin: auto;
 }
 
-.skillsDiv {
+.internshipDiv {
   margin: auto;
   border-radius: 5px;
 }
 
-.skillsDiv:hover {
+.internshipDiv:hover {
   box-shadow: 0px 0px 2px 2px #428bca;
 }
+
 
 /*** 
 
@@ -134,4 +174,119 @@ a {
   background-color: rgba(0, 0, 0, 0.6);
   transition: 0.5s;
 }
+/*** 
+
+====================================================================
+	Internship Experience Section
+====================================================================
+
+***/
+
+
+/******************************************************************************************************************/
+/** EXPERIENCE SECTION                                                                                            */
+/******************************************************************************************************************/
+
+#experience .container {
+    padding: 50px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+#experience .container:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -1px;
+    width: 2px;
+    height: 100%;
+    background: #CCD1D9;
+    z-index: 1
+}
+
+.timeline-block {
+    width: -webkit-calc(50% + 8px);
+    width: -moz-calc(50% + 8px);
+    width: calc(50% + 8px);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    justify-content: space-between;
+    clear: both;
+}
+
+.timeline-block-right {
+    float: right;
+}
+
+.timeline-block-left {
+    float: left;
+    direction: rtl;
+}
+
+.timeline-content {
+    direction: ltr;
+}
+
+.marker {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 5px solid #000;
+    background: #eee;
+    margin-top: 10px;
+    z-index: 999;
+}
+
+.timeline-content {
+    width: 95%;
+    padding: 0 15px;
+    color: #666
+}
+
+.timeline-content h3 {
+    margin-top: 5px;
+	margin-bottom: 0;
+	padding-bottom: 0;
+	font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.timeline-content span {
+    font-size: 15px;
+    color: #a4a4a4;
+}
+
+.timeline-content p {
+    font-size: 14px;
+    line-height: 1.5;
+    word-spacing: 1px;
+    color: #888;
+}
+
+
+@media screen and (max-width: 768px) {
+    #experience .container:before {
+        left: 8px;
+        width: 2px;
+    }
+    .timeline-block {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .timeline-block-right {
+        float: none;
+    }
+
+    .timeline-block-left {
+        float: none;
+        direction: ltr;
+    }
+}
+
 
